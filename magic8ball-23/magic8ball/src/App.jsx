@@ -6,9 +6,15 @@ function App() {
   return (
     <>
       <div>
-        <Scene />
-        <Form />
-        <Footer />
+        <div id="scene-container">
+          <Scene />
+        </div>
+        <div id="form-home-container">
+          <Form />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     </>
   );

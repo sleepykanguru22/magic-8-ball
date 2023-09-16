@@ -44,22 +44,26 @@ export default function Form() {
   return (
     <div className="form-container">
       <h2>Reveal a vision of your future</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="question">Enter a question:</label>
-          <input
-            type="text"
-            id="question"
-            name="question"
-            value={formData.question}
-            onChange={handleChange}
-          />
-          <span className="error">{errors.question}</span>
-        </div>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+      <div className="card">
+        {" "}
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="question">Enter a question:</label>
+            <input
+              type="text"
+              id="question"
+              name="question"
+              value={formData.question}
+              onChange={handleChange}
+            />
+            <span className="error">{errors.question}</span>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
       {submitted && (
         <div>
           <h3>Entered Data:</h3>

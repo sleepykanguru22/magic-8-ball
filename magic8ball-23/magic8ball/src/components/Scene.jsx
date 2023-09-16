@@ -5,7 +5,7 @@ export default function Scene() {
     <div>
       <Spline
         scene="https://prod.spline.design/L9ahnqouX-7W99s3/scene.splinecode"
-        preload={"true"}
+        preload="true"
       />
     </div>
   );
