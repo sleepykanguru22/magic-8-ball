@@ -44,11 +44,11 @@ export default function Form() {
   return (
     <div className="form-container">
       <h2>Reveal a vision of your future</h2>
-      <div className="card">
+      <div className="form-card">
         {" "}
         <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="question">Enter a question:</label>
+          <div className="form-body">
+            <label htmlFor="question">Enter a question: </label>
             <input
               type="text"
               id="question"
@@ -65,7 +65,7 @@ export default function Form() {
       </div>
 
       {submitted && (
-        <div>
+        <div className="results">
           <h3>Entered Data:</h3>
           <p>Your question: {formData.question}</p>
           <Vision />
