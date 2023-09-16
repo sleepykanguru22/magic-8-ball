@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./form.css";
 import Vision from "./Vision";
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -41,7 +42,7 @@ export default function Form() {
   };
 
   return (
-    <div>
+    <div className="form-container">
       <h2>Reveal a vision of your future</h2>
       <form onSubmit={handleSubmit}>
         <div>
