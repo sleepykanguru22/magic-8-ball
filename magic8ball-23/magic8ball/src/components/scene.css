@@ -1,0 +1,7 @@
+.bg {
+  background-image: url(../assets/headertest.svg);
+  background-size: cover;
+  width: auto;
+  height: auto;
+  padding-bottom: 50px;
+}
